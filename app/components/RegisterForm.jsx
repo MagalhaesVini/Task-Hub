@@ -43,23 +43,19 @@ const RegisterForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <label>
-                Nome:
-                <input type="text" name="name" value={formData.name} onChange={handleChange} />
+                <input type="text" name="name" placeholder='Nome:' value={formData.name} onChange={handleChange} />
             </label>
             <br />
             <label>
-                Email:
-                <input type="email" name="email" value={formData.email} onChange={handleChange} />
+                <input type="email" name="email" placeholder='Email:' value={formData.email} onChange={handleChange} />
             </label>
             <br />
             <label>
-                Senha:
-                <input type="password" name="password" value={formData.password} onChange={handleChange} />
+                <input type="password" name="password" placeholder='Senha:' value={formData.password} onChange={handleChange} />
             </label>
             <br />
             <label>
-                Confirmar Senha:
-                <input type="password" name="confirmpassword" value={formData.confirmpassword} onChange={handleChange}/>
+                <input type="password" name="confirmpassword" placeholder='Confirmar Senha:' value={formData.confirmpassword} onChange={handleChange}/>
             </label>
             <br />
             <button type="submit">Registrar</button>
