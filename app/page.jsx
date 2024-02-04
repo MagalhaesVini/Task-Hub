@@ -1,12 +1,15 @@
-// pages/register.js
-
 import RegisterForm from '../app/components/RegisterForm';
+import LoginForm from './components/LoginForm';
+
 
 const RegisterPage = () => {
   return (
     <div>
-      <h1>Registro de Usuário</h1>
+      <p>Registro de Usuário</p>
       <RegisterForm />
+      <br />
+      <p>Login</p>
+      <LoginForm />
     </div>
   );
 };
