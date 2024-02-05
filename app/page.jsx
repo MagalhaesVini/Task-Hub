@@ -5,9 +5,9 @@ import LoginForm from './components/LoginForm';
 const RegisterPage = () => {
   return (
     <div>
-      <RegisterForm />
-      <br />
       <LoginForm />
+      <br />
+      <RegisterForm />
     </div>
   );
 };
