@@ -17,6 +17,8 @@ const RegisterForm = () => {
         });
     };
 
+    const [registrationMessage, setRegistrationMessage] = useState('');
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
@@ -31,17 +33,29 @@ const RegisterForm = () => {
                 body: JSON.stringify(formData),
             });
 
+            console.log(response);
             const result = await response.json();
             console.log(result);
+
+            if (response.ok) {
+                // Registro bem-sucedido
+                setRegistrationMessage('Registro bem-sucedido!');
+            } else {
+                // Erro no registro
+                setRegistrationMessage(`Erro ao criar usuário: ${result.message}`);
+            }
 
             // Redirecionar para outra página após o registro, se necessário
         } catch (error) {
             console.error('Erro ao criar usuário:', error.message);
+            setRegistrationMessage('Erro ao criar usuário. Por favor, tente novamente.');
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
+            <p>{registrationMessage}</p>
+            <p>Registro de Usuário:</p>
             <label>
                 <input type="text" name="name" placeholder='Nome:' value={formData.name} onChange={handleChange} />
             </label>
@@ -55,7 +69,7 @@ const RegisterForm = () => {
             </label>
             <br />
             <label>
-                <input type="password" name="confirmpassword" placeholder='Confirmar Senha:' value={formData.confirmpassword} onChange={handleChange}/>
+                <input type="password" name="confirmpassword" placeholder='Confirmar Senha:' value={formData.confirmpassword} onChange={handleChange} />
             </label>
             <br />
             <button type="submit">Registrar</button>

@@ -36,6 +36,7 @@ const LoginForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
+            <p>Login:</p>
             <label>
                 <input type="email" name="email" placeholder='Email:' value={loginData.email} onChange={handleChange} />
             </label>
