@@ -55,7 +55,7 @@ const RegisterForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <p>{registrationMessage}</p>
-            <p>Registro de Usuário:</p>
+            <p>Registro de Login:</p>
             <label>
                 <input type="text" name="name" placeholder='Nome:' value={formData.name} onChange={handleChange} />
             </label>
@@ -73,6 +73,9 @@ const RegisterForm = () => {
             </label>
             <br />
             <button type="submit">Registrar</button>
+            <br />
+            <p>Já possui uma conta? Ótimo! <a href="http://localhost:3000/Login" rel="noopener noreferrer">Faça o login aqui.</a> Se não, crie sua conta acima</p>
+            
         </form>
     );
 };

@@ -1,15 +1,14 @@
-import RegisterForm from '../app/components/RegisterForm';
-import LoginForm from './components/LoginForm';
 
-
-const RegisterPage = () => {
+const page = () => {
   return (
     <div>
-      <LoginForm />
+      <a href="http://localhost:3000/Home">HOME</a>
       <br />
-      <RegisterForm />
+      <a href="http://localhost:3000/Login">LOGIN</a>
+      <br />
+      <a href="http://localhost:3000/Registro">REGISTRO</a>
     </div>
   );
 };
 
-export default RegisterPage;
+export default page;
