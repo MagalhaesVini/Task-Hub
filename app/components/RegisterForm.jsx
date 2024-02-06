@@ -74,7 +74,7 @@ const RegisterForm = () => {
             <br />
             <button type="submit">Registrar</button>
             <br />
-            <p>Já possui uma conta? Ótimo! <a href="http://localhost:3000/Login" rel="noopener noreferrer">Faça o login aqui.</a> Se não, crie sua conta acima</p>
+            <p>Já possui uma conta? Ótimo! <a href="https://task-hub-magalhaes.vercel.app/Login" rel="noopener noreferrer">Faça o login aqui.</a> Se não, crie sua conta acima</p>
             
         </form>
     );

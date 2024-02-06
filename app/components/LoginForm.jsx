@@ -49,7 +49,7 @@ const LoginForm = () => {
             <br />
             <button type="submit">Login</button>
             <br />
-            <p>Novo por aqui? <a href="http://localhost:3000/Registro" rel="noopener noreferrer">Crie sua conta clicando aqui.</a> Se já tem uma conta, basta fazer o login.</p>
+            <p>Novo por aqui? <a href="https://task-hub-magalhaes.vercel.app/Registro" rel="noopener noreferrer">Crie sua conta clicando aqui.</a> Se já tem uma conta, basta fazer o login.</p>
         </form>
 
     );
