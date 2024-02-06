@@ -6,7 +6,6 @@ import RoutesApp from '../routes/app'
 const Home = () => {
   return (
     <div>
-      <RoutesApp />
       <h1>hello</h1>
     </div>
   )
