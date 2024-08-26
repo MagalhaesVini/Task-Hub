@@ -21,7 +21,7 @@ const LoginForm = () => {
         e.preventDefault();
 
         try {
-            const response = await fetch('https://auth-jwt-development.up.railway.app/auth/login', {
+            const response = await fetch('https://auth-jwt-0u97.onrender.com/auth/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

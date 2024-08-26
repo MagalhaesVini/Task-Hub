@@ -25,7 +25,7 @@ const RegisterForm = () => {
 
 
         try {
-            const response = await fetch('https://auth-jwt-development.up.railway.app/auth/register', {
+            const response = await fetch('https://auth-jwt-0u97.onrender.com/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
